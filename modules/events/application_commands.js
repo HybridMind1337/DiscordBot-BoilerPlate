@@ -5,7 +5,7 @@ const yaml = require('js-yaml');
 const ms = require('ms');
 const { EmbedBuilder } = require('discord.js');
 const map_cooldown = new Map();
-const colors = require('ansi-colors'); // Добавен пакет ansi-colors
+const colors = require('ansi-colors'); 
 
 const config = yaml.load(fs.readFileSync('./configs/config.yml', 'utf8'));
 
@@ -19,7 +19,7 @@ client.on('interactionCreate', async (interaction) => {
 
         if (!command)
             return interaction.reply({
-                content: colors.red('`❌` Invalid command, please try again later.'), // Използване на colors.red()
+                content: colors.red('`❌` Invalid command, please try again later.'),
                 ephemeral: true,
             });
 
@@ -27,7 +27,7 @@ client.on('interactionCreate', async (interaction) => {
             if (command.owner_only && typeof command.owner_only === 'boolean') {
                 if (config.ownerID !== interaction.user.id) {
                     return interaction.reply({
-                        content: colors.red('`❌` Sorry but this command is restricted for the bot owner only!'), // Използване на colors.red()
+                        content: '`❌` Sorry but this command is restricted for the bot owner only!',
                         ephemeral: true,
                     });
                 }
@@ -37,7 +37,7 @@ client.on('interactionCreate', async (interaction) => {
                 if (!config.developers.includes(interaction.user.id)) {
                     try {
                         await interaction.reply({
-                            content: colors.red('`❌` Sorry but this command is restricted for developers only!'), // Използване на colors.red()
+                            content: '`❌` Sorry but this command is restricted for developers only!', 
                             ephemeral: true,
                         });
                     } catch (error) {
@@ -67,11 +67,11 @@ client.on('interactionCreate', async (interaction) => {
                 if (!boolean) {
                     try {
                         await interaction.reply({
-                            content: colors.red('`❌` Sorry but you are not allowed to use this command!'), // Използване на colors.red()
+                            content: '`❌` Sorry but you are not allowed to use this command!', 
                             ephemeral: true,
                         });
                     } catch (error) {
-                        console.error(colors.red(`Failed to send interaction reply: ${error}`)); // Използване на colors.red()
+                        console.error(colors.red(`Failed to send interaction reply: ${error}`)); 
                     }
                     return;
                 }
@@ -89,9 +89,9 @@ client.on('interactionCreate', async (interaction) => {
                         const time = new Date(date_now + milliseconds).getTime();
 
                         return interaction.reply({
-                            content: colors.red(`\`❌\` You are on cooldown! You can use this command again in <t:${Math.floor(
+                            content: `\`❌\` You are on cooldown! You can use this command again in <t:${Math.floor(
                                 time / 1000
-                            )}:f>.`), // Използване на colors.red()
+                            )}:f>.`, // Използване на colors.red()
                             ephemeral: true,
                         });
                     }
