@@ -2,6 +2,21 @@
 
 Discord bot boilerplate built with discord.js v14
 
+## Features
+
+- Role permissions
+- Developers only perms
+- Owner only perms
+- Cooldown
+- Logging system
+- Event Handler
+- Application Command Handler
+- Interactions Handler
+- Bot Activity
+    - You can change it from `configs/config.yml`
+- Checking if the bot has the right permissions
+- Checks if the bot is in the correct discord server, otherwise it will leave from others
+
 ## Installation
 
 1. Clone this repository to your local machine.
@@ -37,21 +52,6 @@ BotActivitySettings:
     - "{total-users} users"
     - "{total-messages} messages"
 ```
-
-## Features
-
-- Role permissions
-- Developers only perms
-- Owner only perms
-- Cooldown
-- Logging system
-- Event Handler
-- Application Command Handler
-- Interactions Handler
-- Bot Activity
-    - You can change it from `configs/config.yml`
-- Checking if the bot has the right permissions
-- Checks if the bot is in the correct discord server, otherwise it will leave from others
 
 ## License
 [MIT], © 2023 HybridMind
