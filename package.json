@@ -1,0 +1,30 @@
+{
+  "name": "discordbot-boilerplate",
+  "version": "1.0.0",
+  "description": "Discord bot boilerplate built with discord.js v14",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "HybridMind#6095",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HybridMind1337/DiscordBot-BoilerPlate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HybridMind1337/DiscordBot-BoilerPlate/issues"
+  },
+  "homepage": "https://github.com/HybridMind1337/DiscordBot-BoilerPlate#readme",
+  "dependencies": {
+    "ansi-colors": "^4.1.3",
+    "discord.js": "^14.11.0",
+    "js-yaml": "^4.1.0",
+    "ms": "^2.1.3"
+  }
+}
