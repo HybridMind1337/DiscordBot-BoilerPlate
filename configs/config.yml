@@ -1,0 +1,19 @@
+botID: '1043335657117986817' # Bot ID
+botToken: MTA0MzMzNTY1NzExNzk4NjgxNw.Gt9uVn.4a- # Bot TOKEN
+serverID: '1034964367717957785' # Guild ID
+ownerID: '628160500055670794' # Youre ID
+developers: # Developers user ID list
+  - '628160500055670794'
+log_channel: '1043342753066664006' # Log channel
+
+# ===========================================================================
+# BOT ACTIVITY
+# ===========================================================================
+BotActivitySettings:
+  Enabled: true
+  Type: "WATCHING" # WATCHING, PLAYING, COMPETING
+  Interval: 30 # Time in seconds between status changes, It's recommended to keep it above 20-30 seconds to avoid getting ratelimited
+  Statuses: # Valid Variables: {total-users}, {total-channels}, {total-messages}
+    - "{total-users} users"
+    - "{total-messages} messages"
+    - "hybridstore.org"
