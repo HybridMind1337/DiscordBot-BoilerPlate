@@ -1,10 +1,10 @@
-botID: '1043335657117986817' # Bot ID
-botToken: MTA0MzMzNTY1NzExNzk4NjgxNw.Gt9uVn.4a- # Bot TOKEN
-serverID: '1034964367717957785' # Guild ID
-ownerID: '628160500055670794' # Youre ID
+botID: '' # Bot ID
+botToken:  # Bot TOKEN
+serverID: '' # Guild ID
+ownerID: '' # Youre ID
 developers: # Developers user ID list
-  - '628160500055670794'
-log_channel: '1043342753066664006' # Log channel
+  - ''
+log_channel: '' # Log channel
 
 # ===========================================================================
 # BOT ACTIVITY
