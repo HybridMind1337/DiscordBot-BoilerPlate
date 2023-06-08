@@ -45,8 +45,6 @@ client.once('ready', async () => {
 
     await console.log("―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――");
     await console.log("                                                                          ");
-    await console.log(`• Join our discord server for support - ${colors.cyan(`discord.gg/hybridstore`)}`);
-    await console.log(`• By using this bot you agree to all terms located here - ${colors.yellow(`hybridstore.org/tos`)}`);
     await console.log(`• ${colors.green(colors.bold(`The bot v${packageFile.version} is now Online!`))}`);
     await console.log("                                                                          ");
     await console.log("――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――");
