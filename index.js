@@ -13,7 +13,7 @@ const version = Number(process.version.split('.')[0].replace('v', ''));
 if (version < 16) {
     console.log(colors.red('[ERROR] The Bot requires a NodeJS version of 16.9 or higher!'));
 
-    const logMsg = `\n\n[${new Date().toLocaleString()}] [ERROR] Plex Bot requires a NodeJS version of 16.9 or higher!`;
+    const logMsg = `\n\n[${new Date().toLocaleString()}] [ERROR] Bot requires a NodeJS version of 16.9 or higher!`;
     fs.appendFile('./data/logs.txt', logMsg, (e) => {
         if (e) console.log(e);
     });
